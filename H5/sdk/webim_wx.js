@@ -4621,7 +4621,8 @@ module.exports = function () {
                                         msgInfo.From_Account,
                                         msgInfo.To_Account,
                                         msgBody.MsgContent.Download_Flag,
-                                        SESSION_TYPE.C2C
+                                        SESSION_TYPE.C2C, 
+                    			msgBody.MsgContent.Url
                                     );
                                 } else {
                                     msgType = MSG_ELEMENT_TYPE.TEXT;
@@ -4785,7 +4786,8 @@ module.exports = function () {
                                             msgInfo.From_Account,
                                             msgInfo.To_Account,
                                             msgBody.MsgContent.Download_Flag,
-                                            SESSION_TYPE.C2C
+                                            SESSION_TYPE.C2C, 
+                    			    msgBody.MsgContent.Url
                                         );
                                     } else {
                                         msgType = MSG_ELEMENT_TYPE.TEXT;
@@ -4965,7 +4967,8 @@ module.exports = function () {
                                             msgInfo.From_Account,
                                             msgInfo.To_Account,
                                             msgBody.MsgContent.Download_Flag,
-                                            SESSION_TYPE.C2C
+                                            SESSION_TYPE.C2C, 
+                    			    msgBody.MsgContent.Url
                                         );
                                     } else {
                                         msgType = MSG_ELEMENT_TYPE.TEXT;
@@ -5198,7 +5201,8 @@ module.exports = function () {
                                     msgInfo.From_Account,
                                     msgInfo.To_Account,
                                     msgBody.MsgContent.Download_Flag,
-                                    SESSION_TYPE.GROUP
+                                    SESSION_TYPE.GROUP, 
+                    		    msgBody.MsgContent.Url
                                 );
                             } else {
                                 msgType = MSG_ELEMENT_TYPE.TEXT;
